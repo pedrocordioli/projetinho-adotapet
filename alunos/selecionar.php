@@ -9,10 +9,19 @@ include "../includes/conexao.php";
     <a href="novo.php">Adicionar aluno</a>
 </p>
 <h2>Listagem de animais</h2>
-<table boder="1">
+<table border="1">
     <tr>
         <td>código</td>
         <td>nome</td>
+        <td>idade</td>
+        <td>sexo</td>
+        <td>especie</td>
+        <td>porte</td>
+        <td>cidade</td>
+        <td>estado</td>
+        <td>comportamento</td>
+        <td>ações</td>
+
     </tr>
 
     <?php
@@ -23,6 +32,18 @@ include "../includes/conexao.php";
     <tr>
         <td><?php echo $um_pet['id_animal'];?></td>
         <td><?php echo $um_pet['nome'];?></td>
+        <td><?php echo $um_pet['idade'];?></td>
+        <td><?php echo $um_pet['sexo'];?></td>
+        <td><?php echo $um_pet['especie'];?></td>
+        <td><?php echo $um_pet['porte'];?></td>
+        <td><?php echo $um_pet['cidade'];?></td>
+        <td><?php echo $um_pet['estado'];?></td>
+        <td><?php echo $um_pet['comportamento'];?></td>
+        <td>
+            <a href="#" title="Ver completo">Visualizar</a>
+            <a href="#">Editar</a>
+            <a href="#">Excluir</a>
+        </td>
     </tr>
     <?php
     endwhile;
