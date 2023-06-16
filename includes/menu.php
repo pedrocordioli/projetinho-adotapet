@@ -1,5 +1,6 @@
 <nav>
-    <a href="#">Ongs</a>
-    <a href="#">Pets</a>
+    <a href="#">Clientes</a>
+    <a href="#">Funcionarios</a>
+    <a href="../alunos/selecionar.php">Alunos</a>
     <a href="../painel/logout.php">Sair</a>
 </nav>
